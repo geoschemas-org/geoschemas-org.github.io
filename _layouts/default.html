@@ -40,7 +40,11 @@
           <span class="credits right">
             <ul>
             {% for item in page.nav %}
-              <li><a href="{{ item.url }}" {% if item.active == true> %} class="active"{% endif %}>{{ item.title }}</a></li>
+              {% if item.url %}
+                <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+              {% else %}
+                <li>{{ item.title }}</li>
+              {% endif %}
            {% endfor %}
            </ul>
          </span>
