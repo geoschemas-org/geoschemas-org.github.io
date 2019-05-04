@@ -1,0 +1,33 @@
+{
+  "@context":{
+    "@vocab": "http://geoschemas.org/temporal/context.jsonld",
+    "geosci-time": "http://geoschemas.org/temporal/context.jsonld",
+    "schema:": "http://schema.org/",
+    "time": "http://www.w3.org/2006/time#"
+  },
+  "@graph":[
+    {
+      "@id": "time:TemporalEntity"
+    },
+    {
+      "@id": "geosci-time:temporalCoverage",
+      "schema:rangeIncludes": [
+        "time:TemporalEntity"
+      ]
+    },
+    {
+      "@id": "geosci-time:BeforePresent",
+      "@type": "time:TRS",
+      "schema:name": "Before Present",
+      "schema:description": "Temporal position expressed numerically in years before January 1, 1950"
+    },
+    {
+      "@id": "geosci-time:MillionsOfYears",
+      "@type": "time:TRS",
+      "schema:sameAs": "http://resource.geosciml.org/classifier/cgi/geologicage/ma",
+      "schema:name": "Millions of Years",
+      "schema:description": "	Temporal position expressed numerically scaled in millions of years increasing backwards relative to 1950"
+      
+    }
+  ]
+}
