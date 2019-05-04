@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Temporal Coverage
 tags: temporal
 ---
