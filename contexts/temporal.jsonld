@@ -3,18 +3,24 @@
     "@vocab": "http://geoschemas.org/contexts/temporal.jsonld",
     "geosci-time": "http://geoschemas.org/contexts/temporal.jsonld",
     "schema:": "http://schema.org/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
     "time": "http://www.w3.org/2006/time#"
   },
   "@graph":[
     {
-      "@id": "time:TemporalEntity"
-    },
-    {
       "@id": "geosci-time:temporalCoverage",
-      "schema:domainIncludes": "schema:Dataset",
-      "schema:rangeIncludes": [
-        "time:TemporalEntity"
-      ]
+      "@type": "rdf:Property",
+      "skos:closeMatch": {
+         "@id": "schema:temporalCoverage"
+      },
+      "rdfs:comment": "The temporalCoverage of a Dataset indicates the period of time that the contents of the dataset apply. This extension to schema:Dataset allows for the description of temporal coverages that cannot be described using a schema:DateTime or ISO 8601 time interval. Some examples of such coverages are geologic time scales, seasonal coverages across multiple years, or certain days of the week. The coverage is expressed as a time:TemporalEntity, typcially a time:Interval or a time:Instant. ",
+      "rdfs:label": "temporalCoverage",
+      "schema:domainIncludes": { 
+        "@id": "schema:Dataset" 
+      },
+      "schema:rangeIncludes": { 
+        "@id": "time:TemporalEntity" 
+      }
     },
     {
       "@id": "geosci-time:BeforePresent",
