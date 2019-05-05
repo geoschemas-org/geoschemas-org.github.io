@@ -1,6 +1,5 @@
 ---
 title: Temporal Coverage
-tags: temporal
 nav:
   - title: Home 
     url: /
