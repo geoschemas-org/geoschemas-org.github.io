@@ -1,4 +1,5 @@
 ---
+layout: bootstrap
 title: Temporal Coverage
 tags: temporal
 nav:
