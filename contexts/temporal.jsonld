@@ -11,6 +11,7 @@
     },
     {
       "@id": "geosci-time:temporalCoverage",
+      "schema:domainIncludes": "schema:Dataset",
       "schema:rangeIncludes": [
         "time:TemporalEntity"
       ]
