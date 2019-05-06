@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -e # halt script on error
+
+# Build the site
+bundle exec jekyll build
+
+# html-proofer - This tool checks your resulting site to ensure all links and images exist. 
+# --disable-external - Avoids testing external sites
+bundle exec htmlproofer ./_site --disable-external
