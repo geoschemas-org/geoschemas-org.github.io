@@ -1,5 +1,6 @@
 ---
 title: Extensions
+nav-section: Extensions
 nav:
   - title: Home 
     url: /
