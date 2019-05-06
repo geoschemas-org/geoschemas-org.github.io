@@ -9,13 +9,12 @@ nav:
   - title: Temporal Coverage 
 ---
 
-# Temporal Coverage
-
-* Intervals
-* Instants
+* [Intervals](#intervals)
+* [Instants](#instants)
 
 The [OWL Time](https://www.w3.org/TR/owl-time/) vocabulary defines useful ways for describing the temporal coverage. The temporalCoverage of a Dataset indicates the period of time that the contents of the dataset apply. This extension to schema:Dataset allows for the description of temporal coverages that cannot be described using a ISO 8601 formatted date (and time). Some examples of such coverages are geologic time scales, seasonal coverages across multiple years, or certain days of the week. The coverage is expressed as a time:TemporalEntity, typcially a time:Interval or a time:Instant.
 
+<a id="intervals"></a>
 ## Intervals
 
 ### Simple Date Time Temporal Coverage ###
@@ -135,3 +134,5 @@ Then, we use the [time:intervalContains](https://www.w3.org/TR/owl-time/#time:in
 }
 ```
 
+<a id="instants"></a>
+## Instants
