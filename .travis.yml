@@ -1,3 +1,5 @@
+# See: https://jekyllrb.com/docs/continuous-integration/travis-ci/
+
 language: ruby
 rvm:
   - 2.4.1
