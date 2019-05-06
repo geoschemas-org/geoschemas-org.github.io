@@ -35,12 +35,12 @@
                 {% for item in site.nav %}
                   {% assign section_active = false %}    
                   {% if item.section == page.nav-section %}
-                       {% assign section_active = true %}    
+                    {% assign section_active = true %}    
                   {% endif %}
                   {% if item.url %}
-                    <li class="nav-item {% section_active %}"><a href="{{ item.url }}">{{ item.title }}</a></li>
+                    <li class="nav-item {{ section_active }}"><a href="{{ item.url }}">{{ item.title }}</a></li>
                   {% else %}
-                    <li class=" {% section_active %}">{{ item.title }}</li>
+                    <li class=" {{ section_active }}">{{ item.title }}</li>
                   {% endif %}
                {% endfor %}
                </ul>
