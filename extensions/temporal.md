@@ -1,5 +1,6 @@
 ---
 title: Temporal Coverage
+nav-section: Extensions
 nav:
   - title: Home 
     url: /
