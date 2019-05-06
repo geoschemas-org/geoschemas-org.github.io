@@ -13,7 +13,7 @@
       "skos:closeMatch": {
          "@id": "schema:temporalCoverage"
       },
-      "rdfs:comment": "The temporalCoverage of a Dataset indicates the period of time that the contents of the dataset apply. This extension to schema:Dataset allows for the description of temporal coverages that cannot be described using a schema:DateTime or ISO 8601 time interval. Some examples of such coverages are geologic time scales, seasonal coverages across multiple years, or certain days of the week. The coverage is expressed as a time:TemporalEntity, typcially a time:Interval or a time:Instant. ",
+      "rdfs:comment": "The temporalCoverage of a Dataset indicates the period of time that the contents of the dataset apply. This extension to schema:Dataset allows for the description of temporal coverages that cannot be described using a schema:DateTime or ISO 8601 time interval. Some examples of such coverages are geologic time scales, seasonal coverages across multiple years, or certain days of the week. The coverage is expressed as a time:TemporalEntity, typcially a time:Interval or a time:Instant.",
       "rdfs:label": "temporalCoverage",
       "schema:domainIncludes": { 
         "@id": "schema:Dataset" 
