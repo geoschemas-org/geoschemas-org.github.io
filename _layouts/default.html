@@ -33,9 +33,9 @@
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                 {% for item in site.nav %}
-                  {% assign section_active = false %}    
+                  {% assign section_active = "" %}    
                   {% if item.section == page.nav-section %}
-                    {% assign section_active = true %}    
+                    {% assign section_active = "active" %}    
                   {% endif %}
                   {% if item.url %}
                     <li class="nav-item {{ section_active }}"><a href="{{ item.url }}">{{ item.title }}</a></li>
