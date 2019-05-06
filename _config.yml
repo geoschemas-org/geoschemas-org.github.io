@@ -3,8 +3,11 @@ title: geoschemas.org
 description: schema.org extensions for the geosciences
 nav:
   - title: Home
+    section: Home
     url: /
   - title: Extensions
+    section: Extensions
     url: /extensions
   - title: About
+    section: About
     url: /about
