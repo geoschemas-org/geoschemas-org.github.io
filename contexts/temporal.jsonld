@@ -33,8 +33,7 @@
       "@type": "time:TRS",
       "schema:sameAs": "http://resource.geosciml.org/classifier/cgi/geologicage/ma",
       "schema:name": "Millions of Years",
-      "schema:description": "	Temporal position expressed numerically scaled in millions of years increasing backwards relative to 1950"
-      
+      "schema:description": "Temporal position expressed numerically scaled in millions of years increasing backwards relative to 1950"
     }
   ]
 }
