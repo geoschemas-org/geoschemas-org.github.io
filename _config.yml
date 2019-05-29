@@ -11,7 +11,7 @@ nav:
   - title: About
     section: About
     url: /about
-   - title: Signup
+  - title: Signup
     section: Signup
     url: /signup
     
