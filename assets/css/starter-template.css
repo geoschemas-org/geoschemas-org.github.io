@@ -31,3 +31,7 @@ td:nth-child(1) {
 td:nth-child(3) {
   width: 80px;
 }
+
+#mc_embed_signup .mc-field-group.input-group label {
+  margin-left: 5px;  
+}
