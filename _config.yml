@@ -11,6 +11,9 @@ nav:
   - title: About
     section: About
     url: /about
+   - title: Signup
+    section: Signup
+    url: /signup
     
 # See: https://jekyllrb.com/docs/continuous-integration/travis-ci/
 exclude: [vendor]
