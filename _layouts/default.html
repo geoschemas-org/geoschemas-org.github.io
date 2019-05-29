@@ -64,14 +64,16 @@
            </p>
          </div>
       </div>
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141075626-1"></script>
-      <script>
+      {% if site.google_analytics %}
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141075626-1"></script>
+        <script>
          window.dataLayer = window.dataLayer || [];
          function gtag(){dataLayer.push(arguments);}
          gtag('js', new Date());
 
          gtag('config', '{{ site.google_analytics }}');
-      </script>
+        </script>
+      {% endif %}
    </body>
 </html>
