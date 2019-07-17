@@ -14,7 +14,7 @@ __Namespace Prefix__: geosci-time
 __Namespace URI__: 	[http://geoschemas.org/contexts/temporal.jsonld](http://geoschemas.org/contexts/temporal.jsonld)
 
 
-* [Classes](#classes)
+* Classes
 * [Properties](#properties)
   * [geosci-time:temporalCoverage](#temporalCoverage)
 * [Named Individuals](#namedindividuals)
@@ -22,7 +22,7 @@ __Namespace URI__: 	[http://geoschemas.org/contexts/temporal.jsonld](http://geos
   * [geosci-time:MillionsOfYears](#MillionsOfYears)
 * [Examples](#examples)  
   * [Describing Time Intervals](#intervals)
-  * [Describing Time Instants](#instants)
+  * Describing Time Instants
 
 <a name="classes"></a>
 
@@ -31,13 +31,12 @@ __Namespace URI__: 	[http://geoschemas.org/contexts/temporal.jsonld](http://geos
 *none*
 
 [back to top](#top)
-<a name="properties"></a>
 <hr/>
+<a name="properties"></a>
 
-
-<a name="temporalCoverage"></a>
 ## Properties
 
+<a name="temporalCoverage"></a>
 __geosci-time:temporalCoverage__ - Use the [OWL-Time vocabulary](https://www.w3.org/TR/owl-time/) to describe the temporal coverage of a Dataset.
 
 Domain: [schema:Dataset](http://schema.org/Dataset)
@@ -48,12 +47,12 @@ The [OWL Time vocabulary](https://www.w3.org/TR/owl-time/) defines useful ways f
 
 [back to top](#top)
 
-<a name="namedindividuals"></a>
 <hr/>
+<a name="namedindividuals"></a>
 
-<a name="BeforePresent"></a>
 ## Named Individuals
 
+<a name="BeforePresent"></a>
 __geosci-time:BeforePresent__ - For defining the 'Before Present' (BP) temporal reference system for use in OWL-Time ([time:hasTRS](https://www.w3.org/TR/owl-time/#time:hasTRS))
 
 Type: [time:TRS](https://www.w3.org/TR/owl-time/#time:TRS)
@@ -71,12 +70,12 @@ Temporal position expressed numerically scaled in millions of years increasing b
 
 [back to top](#top)
 
-<a name="examples"></a>
 <hr/>
+<a name="examples"></a>
 
-<a id="intervals"></a>
 ## Examples
 
+<a id="intervals"></a>
 
 ### Intervals
 
@@ -197,7 +196,10 @@ Then, we use the [time:intervalContains](https://www.w3.org/TR/owl-time/#time:in
 }
 ```
 [back to top](#top)
+
+<hr/>
 <a id="instants"></a>
+
 ### Instants
 
 [back to top](#top)
