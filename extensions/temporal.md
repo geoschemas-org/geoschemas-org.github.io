@@ -8,7 +8,7 @@ nav:
     url: /extensions/
   - title: Temporal Coverage 
 ---
-<a name="top"></a>
+
 __Namespace Prefix__: geosci-time
 __Namespace URI__: 	http://geoschemas.org/contexts/temporal.jsonld
 
