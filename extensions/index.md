@@ -19,7 +19,7 @@ nav:
    <tbody>
      <tr>
        <th scope="row" class="text-nowrap"><a href="/extensions/temporal.html">Temporal</a></th>
-       <td class="text-nowrap"><a href="/contexts/temporal.jsonld">http://geoschemas.org/contexts/temporal.jsonld</a></td>
+       <td class="text-nowrap"><a href="http://schema.geoschemas.org/contexts/temporal">http://schema.geoschemas.org/contexts/temporal</a></td>
      </tr>
    </tbody>
  </table>
