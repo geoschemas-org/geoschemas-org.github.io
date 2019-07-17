@@ -10,7 +10,8 @@ nav:
 ---
 
 __Namespace Prefix__: geosci-time
-__Namespace URI__: 	http://geoschemas.org/contexts/temporal.jsonld
+
+__Namespace URI__: 	[http://geoschemas.org/contexts/temporal.jsonld](http://geoschemas.org/contexts/temporal.jsonld)
 
 
 * [Classes](#classes)
