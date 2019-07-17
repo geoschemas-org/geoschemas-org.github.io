@@ -24,15 +24,17 @@
     },
     {
       "@id": "geosci-time:BeforePresent",
-      "@type": "time:TRS",
+      "@type": ["time:TRS", "schema:Thing"],
       "schema:name": "Before Present",
+      "schema:alternateName": "BP",
       "schema:description": "Temporal position expressed numerically in years before January 1, 1950"
     },
     {
       "@id": "geosci-time:MillionsOfYears",
-      "@type": "time:TRS",
-      "schema:sameAs": "http://resource.geosciml.org/classifier/cgi/geologicage/ma",
+      "@type": ["time:TRS", "schema:Thing"],
       "schema:name": "Millions of Years",
+      "schema:alternateName": "Ma",
+      "schema:sameAs": "http://resource.geosciml.org/classifier/cgi/geologicage/ma",
       "schema:description": "Temporal position expressed numerically scaled in millions of years increasing backwards relative to 1950"
     }
   ]
