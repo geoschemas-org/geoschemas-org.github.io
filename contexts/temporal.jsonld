@@ -1,7 +1,7 @@
 {
   "@context":{
     "@vocab": "http://geoschemas.org/contexts/temporal.jsonld",
-    "geosci-time": "http://geoschemas.org/contexts/temporal.jsonld",
+    "geosci-time": "http://schema.geoschemas.org/contexts/temporal#",
     "schema:": "http://schema.org/",
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "time": "http://www.w3.org/2006/time#"
