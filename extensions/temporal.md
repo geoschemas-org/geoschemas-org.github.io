@@ -22,6 +22,8 @@ __Namespace URI__: 	[http://geoschemas.org/contexts/temporal.jsonld](http://geos
   * [geosci-time:MillionsOfYears](#MillionsOfYears)
 * [Examples](#examples)  
   * [Describing Time Intervals](#intervals)
+    * [Simple Date Time Coverage](#simple)
+    * [Seasonal Coverage](#seasonal)
   * Describing Time Instants
 
 <a name="classes"></a>
@@ -79,7 +81,9 @@ Temporal position expressed numerically scaled in millions of years increasing b
 
 ### Intervals
 
-### Simple Date Time Temporal Coverage ###
+<a id="simple"></a>
+
+#### Simple Date Time Temporal Coverage ####
 
 To express an interval of time as the coverage for a [schema:Dataset](http://schema.org/Dataset), schema.org provides the [schema:temporalCoverage](http://schema.org/temporalCoverage) which allows for defining a coverage using ISO 
 Example: Expressing a time interval using a [time:TemporalEntity](https://www.w3.org/TR/owl-time/#time:TemporalEntity)
@@ -106,6 +110,8 @@ Example: Expressing a time interval using a [time:TemporalEntity](https://www.w3
   }
 }
 ```
+
+<a id="seasonal"></a>
 
 ### Seasonal Coverage ###
 
