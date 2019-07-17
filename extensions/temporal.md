@@ -8,14 +8,74 @@ nav:
     url: /extensions/
   - title: Temporal Coverage 
 ---
+<a name="top"></a>
+__Namespace Prefix__: geosci-time
+__Namespace URI__: 	http://geoschemas.org/contexts/temporal.jsonld
 
-* [Intervals](#intervals)
-* [Instants](#instants)
 
-The [OWL Time](https://www.w3.org/TR/owl-time/) vocabulary defines useful ways for describing the temporal coverage. The temporalCoverage of a Dataset indicates the period of time that the contents of the dataset apply. This extension to schema:Dataset allows for the description of temporal coverages that cannot be described using a ISO 8601 formatted date (and time). Some examples of such coverages are geologic time scales, seasonal coverages across multiple years, or certain days of the week. The coverage is expressed as a time:TemporalEntity, typcially a time:Interval or a time:Instant.
+* [Classes](#classes)
+* [Properties](#properties)
+  * [geosci-time:temporalCoverage](#temporalCoverage)
+* [Named Individuals](#namedindividuals)
+  * [geosci-time:BeforePresent](#BeforePresent)
+  * [geosci-time:MillionsOfYears](#MillionsOfYears)
+* [Examples](#examples)  
+  * [Describing Time Intervals](#intervals)
+  * [Describing Time Instants](#instants)
+
+<a name="classes"></a>
+
+## Classes
+
+*none*
+
+[back to top](#top)
+<hr/>
+<a name="properties"></a>
+
+
+## Properties
+
+<a name="temporalCoverage"></a>
+__geosci-time:temporalCoverage__ - Use the [OWL-Time vocabulary](https://www.w3.org/TR/owl-time/) to describe the temporal coverage of a Dataset.
+
+Domain: [schema:Dataset](http://schema.org/Dataset)
+
+Range: [time:TemporalEntity](https://www.w3.org/TR/owl-time/#time:TemporalEntity)
+
+The [OWL Time vocabulary](https://www.w3.org/TR/owl-time/) defines useful ways for describing the temporal coverage. The temporalCoverage of a Dataset indicates the period of time that the contents of the dataset apply. This extension to schema:Dataset allows for the description of temporal coverages that cannot be described using a ISO 8601 formatted date (and time). Some examples of such coverages are geologic time scales, seasonal coverages across multiple years, or certain days of the week. The coverage is expressed as a time:TemporalEntity, typcially a time:Interval or a time:Instant.
+
+[back to top](#top)
+
+<hr/>
+<a name="namedindividuals"></a>
+
+## Named Individuals
+
+<a name="BeforePresent"></a>
+__geosci-time:BeforePresent__ - For defining the 'Before Present' (BP) temporal reference system for use in OWL-Time ([time:hasTRS](https://www.w3.org/TR/owl-time/#time:hasTRS))
+
+Type: [time:TRS](https://www.w3.org/TR/owl-time/#time:TRS)
+
+Temporal position expressed numerically in years before January 1, 1950
+
+<a name="MillionsOfYears"></a>
+__geosci-time:MillionsOfYears__ - For defining the 'Millions of Years' (Ma) temporal reference system for use in OWL-Time ([time:hasTRS](https://www.w3.org/TR/owl-time/#time:hasTRS))
+
+Type: [time:TRS](https://www.w3.org/TR/owl-time/#time:TRS)
+
+Same As: http://resource.geosciml.org/classifier/cgi/geologicage/ma
+
+Temporal position expressed numerically scaled in millions of years increasing backwards relative to 1950
+
+[back to top](#top)
+
+<hr/>
+<a name="examples"></a>
+## Examples
 
 <a id="intervals"></a>
-## Intervals
+### Intervals
 
 ### Simple Date Time Temporal Coverage ###
 
@@ -133,6 +193,8 @@ Then, we use the [time:intervalContains](https://www.w3.org/TR/owl-time/#time:in
   }
 }
 ```
-
+[back to top](#top)
 <a id="instants"></a>
-## Instants
+### Instants
+
+[back to top](#top)
