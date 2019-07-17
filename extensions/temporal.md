@@ -11,7 +11,7 @@ nav:
 
 __Namespace Prefix__: geosci-time
 
-__Namespace URI__: 	[http://geoschemas.org/contexts/temporal.jsonld](http://geoschemas.org/contexts/temporal.jsonld)
+__Namespace URI__: 	[http://schema.geoschemas.org/contexts/temporal#](http://geoschemas.org/contexts/temporal.jsonld)
 
 
 * Classes
@@ -92,7 +92,7 @@ Example: Expressing a time interval using a [time:TemporalEntity](https://www.w3
   "@context":  {
       "@vocab": "http://schema.org/",
       "time": "http://www.w3.org/2006/time#",
-      "geosci-time": "http://geoschemas.org/contexts/temporal.jsonld"
+      "geosci-time": "http://schema.geoschemas.org/contexts/temporal#"
    },
   "@type": "Dataset",
   ...
@@ -137,7 +137,7 @@ Then, we use the [time:intervalContains](https://www.w3.org/TR/owl-time/#time:in
   "@context":  {
       "@vocab": "http://schema.org/",
       "time": "http://www.w3.org/2006/time#",
-      "geosci-time": "http://geoschemas.org/contexts/temporal.jsonld"
+      "geosci-time": "http://schema.geoschemas.org/contexts/temporal#"
    },
   "@type": "Dataset",
   ...
