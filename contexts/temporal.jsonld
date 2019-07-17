@@ -1,6 +1,6 @@
 {
   "@context":{
-    "@vocab": "http://geoschemas.org/contexts/temporal.jsonld",
+    "@vocab": "http://schema.geoschemas.org/contexts/temporal#",
     "geosci-time": "http://schema.geoschemas.org/contexts/temporal#",
     "schema:": "http://schema.org/",
     "skos": "http://www.w3.org/2004/02/skos/core#",
