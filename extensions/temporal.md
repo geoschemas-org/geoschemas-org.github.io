@@ -86,16 +86,12 @@ __geosci-time:ThousandsOfYears__ - For defining the 'Thousands of Years' (ka) te
 
 Type: [time:TRS](https://www.w3.org/TR/owl-time/#time:TRS)
 
-Same As: http://resource.geosciml.org/classifier/cgi/geologicage/ma
-
 Temporal position expressed numerically scaled in thousands of years (ka) increasing backwards relative to 1950 AD.
 
 <a name="MillionsOfYears"></a>
 __geosci-time:MillionsOfYears__ - For defining the 'Millions of Years' (Ma) temporal reference system for use in OWL-Time ([time:hasTRS](https://www.w3.org/TR/owl-time/#time:hasTRS))
 
 Type: [time:TRS](https://www.w3.org/TR/owl-time/#time:TRS)
-
-Same As: http://resource.geosciml.org/classifier/cgi/geologicage/ma
 
 Temporal position expressed numerically scaled in millions of years (Ma) increasing backwards relative to 1950 AD or the present.
 
@@ -104,9 +100,14 @@ __geosci-time:BillionsOfYears__ - For defining the 'Billions of Years' (Ga) temp
 
 Type: [time:TRS](https://www.w3.org/TR/owl-time/#time:TRS)
 
-Same As: http://resource.geosciml.org/classifier/cgi/geologicage/ma
-
 Temporal position expressed numerically scaled in billions of years (Ga) increasing backwards from the present.
+
+<a name="GeologicTimeUnit"></a>
+__geosci-time:GeologicTimeUnitAbbreviation - Geologic time unit for use in OWL-Time ([time:hasTRS](https://www.w3.org/TR/owl-time/#time:hasTRS))
+
+Type: [time:TRS](https://www.w3.org/TR/owl-time/#time:TRS)
+
+Standard time unit abbreviation for the age. BP, ka, Ma, Ga are used for before present, thousands of years, millions of years, and billions of years respecitively.
 
 <a name="Uncertainty"></a>
 __geosci-time:Uncertainty__ - For defining the 'Uncertainty' in a geologic age/date for use in OWL-Time ([time:hasTRS](https://www.w3.org/TR/owl-time/#time:hasTRS)).
@@ -189,21 +190,33 @@ Example: Expressing a time interval using a [time:TemporalEntity](https://www.w3
 Instants in time are useful for describing a position in time where an event occurred. For Datasets, the temporal coverage may be an instant instead of an interval for cases where all observations were made in a single point in time.
 
 <a name="geologic-time-scales"></a>
-The Geoschemas context defines 2 geologic time scales:
+The Geoschemas context defines 4 geologic time scales:
 
 #### Before Present
 
 [http://schema.geoschemas.org/contexts/temporal#BeforePresent](http://schema.geoschemas.org/contexts/temporal#BeforePresent)
 
-Temporal position expressed numerically in years before January 1, 1950
+Temporal position expressed numerically in years before January 1, 1950. Usually used only for radiocarbon dates.
+
+#### Thousands Of Years
+
+[http://schema.geoschemas.org/contexts/temporal#ThousandsOfYears](http://schema.geoschemas.org/contexts/temporal#ThousandsOfYears)
+
+Temporal position expressed numerically scaled in thousands of years increasing backwards relative to 1950 or the date of the age determination. Abbreviation ka."
 
 #### Millions Of Years
 
 [http://schema.geoschemas.org/contexts/temporal#MillionsOfYears](http://schema.geoschemas.org/contexts/temporal#MillionsOfYears)
 
-Temporal position expressed numerically scaled in millions of years increasing backwards relative to 1950 or the present"
+Temporal position expressed numerically scaled in millions of years increasing backwards relative to 1950 or the date of the age determination. Abbreviation Ma."
 
-To specify a Geologic Time Scale, we use an OWL Time Instant. The example below specifies 2 million years before present:
+#### Billions Of Years
+
+[http://schema.geoschemas.org/contexts/temporal#MillionsOfYears](http://schema.geoschemas.org/contexts/temporal#BillionsOfYears)
+
+Temporal position expressed numerically scaled in millions of years increasing backwards relative to 1950 or the the date of the age determination. Abbreviation Ga."
+
+To specify a Geologic Time Scale, we use an OWL Time Instant. The example below specifies 2.45 million years before present:
 
 <pre>
 {
@@ -219,7 +232,7 @@ To specify a Geologic Time Scale, we use an OWL Time Instant. The example below 
     "time:inTimePosition": {
       "@type": "time:TimePosition",
       <strong>"time:hasTRS": { "@id": "geosci-time:BeforePresent" },
-      "time:numericPosition": { "@value": 2000000, "@type": "xsd:decimal" }</strong>
+      "time:numericPosition": { "@value": 2450000, "@type": "xsd:decimal" }</strong>
     }
   }
 }
