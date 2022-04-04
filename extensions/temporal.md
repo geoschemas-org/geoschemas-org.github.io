@@ -217,7 +217,7 @@ Temporal position expressed numerically scaled in millions of years increasing b
 
 Temporal position expressed numerically scaled in millions of years increasing backwards relative to 1950 or the the date of the age determination. Abbreviation Ga."
 
-To specify a Geologic Time Scale, we use an OWL Time Instant. The example below specifies 2.45 million years before present:
+To specify a Geologic Time Scale, we use an OWL Time Instant. The example below specifies 2.45 million years before present (BP):
 
 <pre>
 {
@@ -234,6 +234,7 @@ To specify a Geologic Time Scale, we use an OWL Time Instant. The example below 
       "@type": "time:TimePosition",
       <strong>"time:hasTRS": { "@id": "geosci-time:BeforePresent" },
       "time:numericPosition": { "@value": 2450000, "@type": "xsd:decimal" }</strong>
+      "geosci-time:GeologicTimeUnitAbbreviation": { "@value": "BP, "@type": "xsd:string" }</strong>
     }
   }
 }
