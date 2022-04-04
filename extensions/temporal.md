@@ -22,7 +22,7 @@ __Namespace URI__: 	[http://schema.geoschemas.org/contexts/temporal#](http://geo
   * [geosci-time:RadiocarbonCalibrationCurve](#RadiocarbonCalibrationCurve)
   * [geosci-time:ThousandsOfYears](#ThousandsOfYears)
   * [geosci-time:MillionsOfYears](#MillionsOfYears)
-  * [geosci-time:]BillionsOfYears(#BillionsOfYears)
+  * [geosci-time:BillionsOfYears](#BillionsOfYears)
   * [geosci-time:GeologicTimeUnitAbbreviation](#GeologicTimeUnitAbbreviation)
   * [geosci-time:Uncertainty](#Uncertainty)
   * [geosci-time:UncertaintySigma](#UncertaintySigma)
@@ -111,11 +111,11 @@ Type: [time:TRS](https://www.w3.org/TR/owl-time/#time:TRS)
 Standard time unit abbreviation for the age. BP, ka, Ma, Ga are used for before present, thousands of years, millions of years, and billions of years respecitively.
 
 <a name="Uncertainty"></a>
-__geosci-time:Uncertainty__ - For defining the 'Uncertainty' in a geologic age/date for use in OWL-Time ([time:hasTRS](https://www.w3.org/TR/owl-time/#time:hasTRS)).
+__geosci-time:Uncertainty__ - For defining the 'Uncertainty' in a geologic age/date for use in OWL-Time ([time:hasTRS](https://www.w3.org/TR/owl-time/#time:hasTRS)). 
 
 Type: [time:TRS](https://www.w3.org/TR/owl-time/#time:TRS)
 
-The uncertainty in the value of the geologic age in the same units as the age. Usually expressed in the literature as &pm;. One should always pair this with __UncertaintySigma__ when the sigma of the uncertainty is known.
+The uncertainty in the value of the geologic age in the same units as the age. Usually expressed in the literature using the symbol ± before the value. One should always pair this with __UncertaintySigma__ when the sigma of the uncertainty is known.
 
 <a name="UncertaintySigma"></a>
 __geosci-time:UncertaintySigma__ - For defining the 'Uncertainty Sigma' in a geologic age/date for use in OWL-Time ([time:hasTRS](https://www.w3.org/TR/owl-time/#time:hasTRS)).
