@@ -233,7 +233,7 @@ To specify a Geologic Time Scale, we use an OWL Time Instant. The example below 
     "time:inTimePosition": {
       "@type": "time:TimePosition",
       <strong>"time:hasTRS": { "@id": "geosci-time:BeforePresent" },
-      "time:numericPosition": { "@value": 2450000, "@type": "xsd:decimal" }</strong>
+      "time:numericPosition": { "@value": 2450000, "@type": "xsd:decimal" }
       "geosci-time:GeologicTimeUnitAbbreviation": { "@value": "BP, "@type": "xsd:string" }</strong>
     }
   }
