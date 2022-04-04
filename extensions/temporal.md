@@ -22,7 +22,8 @@ __Namespace URI__: 	[http://schema.geoschemas.org/contexts/temporal#](http://geo
   * [geosci-time:RadiocarbonCalibrationCurve](#RadiocarbonCalibrationCurve)
   * [geosci-time:ThousandsOfYears](#ThousandsOfYears)
   * [geosci-time:MillionsOfYears](#MillionsOfYears)
-  * [geosci-time:BillionsOfYears](#BillionsOfYears)
+  * [geosci-time:GeologicTimeUnitAbbreviation](#GeologicTimeUnitAbbreviation)
+  * [geosci-time:](#BillionsOfYears)
   * [geosci-time:Uncertainty](#Uncertainty)
   * [geosci-time:UncertaintySigma](#UncertaintySigma)
   * [geosci-time:UncertaintyOlder](#UncertaintyOlder)
@@ -102,7 +103,7 @@ Type: [time:TRS](https://www.w3.org/TR/owl-time/#time:TRS)
 
 Temporal position expressed numerically scaled in billions of years (Ga) increasing backwards from the present.
 
-<a name="GeologicTimeUnit"></a>
+<a name="GeologicTimeUnitAbbreviation"></a>
 __geosci-time:GeologicTimeUnitAbbreviation - Geologic time unit for use in OWL-Time ([time:hasTRS](https://www.w3.org/TR/owl-time/#time:hasTRS))
 
 Type: [time:TRS](https://www.w3.org/TR/owl-time/#time:TRS)
