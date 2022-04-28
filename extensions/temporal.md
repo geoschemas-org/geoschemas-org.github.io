@@ -107,7 +107,7 @@ Type: [time:TRS](https://www.w3.org/TR/owl-time/#time:TRS)
 Temporal position expressed numerically scaled in billions of years (Ga) increasing backwards from the present.
 
 <a name="GeologicTimeUnitAbbreviation"></a>
-__geosci-time:GeologicTimeUnitAbbreviation - Geologic time unit for use in OWL-Time ([time:hasTRS](https://www.w3.org/TR/owl-time/#time:hasTRS))
+__geosci-time:GeologicTimeUnitAbbreviation__ - Geologic time unit for use in OWL-Time ([time:hasTRS](https://www.w3.org/TR/owl-time/#time:hasTRS))
 
 Type: [time:TRS](https://www.w3.org/TR/owl-time/#time:TRS)
 
