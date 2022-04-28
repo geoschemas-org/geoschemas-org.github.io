@@ -33,7 +33,10 @@ __Namespace URI__: 	[http://schema.geoschemas.org/contexts/temporal#](http://geo
   * [Instants](#instants)
     * [Geologic Time Scales](#geologic-time-scales)
       * [Before Present](#before-present)
+      * [Before Present Calibrated](#before-present-calibrated)
+      * [Thousands of Years](#thousands-of-years)
       * [Millions of Years](#millions-of-years)
+      * [Billions of Years](#billions-of-years)
   * [Durations](#durations)
   * [Seasonality](#seasonality)
   
