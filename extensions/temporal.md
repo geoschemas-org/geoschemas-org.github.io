@@ -236,7 +236,7 @@ To specify a Geologic Time Scale, we use an OWL Time Instant. The example below 
     "time:inTimePosition": {
       "@type": "time:TimePosition",
       <strong>"time:hasTRS": { "@id": "geosci-time:BeforePresent" },
-      "time:numericPosition": { "@value": 2450000, "@type": "xsd:decimal" }
+      "time:numericPosition": { "@value": 2450000.0, "@type": "xsd:decimal" }
       "geosci-time:GeologicTimeUnitAbbreviation": { "@value": "BP, "@type": "xsd:string" }</strong>
     }
   }
@@ -265,7 +265,7 @@ Sometimes, the temporal coverage of a Dataset is measured as a duration in time.
     "time:hasDuration": {
       "@type": "time:Duration",
       <strong>"time:unitType": { "@id": "time:weeks" },
-      "time:numericDuration": { "@value": 2, "@type": "xsd:decimal" }</strong>
+      "time:numericDuration": { "@value": 2.0, "@type": "xsd:decimal" }</strong>
     }
   }
 }
