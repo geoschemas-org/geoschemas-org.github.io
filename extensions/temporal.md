@@ -202,6 +202,12 @@ The Geoschemas context defines 4 geologic time scales:
 
 Temporal position expressed numerically in years before January 1, 1950. Usually used only for radiocarbon dates.
 
+#### Before Present Calibrated
+
+[http://schema.geoschemas.org/contexts/temporal#BeforePresent](http://schema.geoschemas.org/contexts/temporal#BeforePresentCalibrated)
+
+Temporal position expressed numerically in years before January 1, 1950 AD determined by carbon dating calibrated by a specific [radiocarbon calibration curve](https://en.wikipedia.org/wiki/Radiocarbon_calibration).
+
 #### Thousands Of Years
 
 [http://schema.geoschemas.org/contexts/temporal#ThousandsOfYears](http://schema.geoschemas.org/contexts/temporal#ThousandsOfYears)
@@ -228,6 +234,7 @@ To specify a Geologic Time Scale, we use an OWL Time Instant. The example below 
     "@vocab": "http://schema.org/",
     "time": "http://www.w3.org/2006/time",
     "geosci-time": "http://schema.geoschemas.org/contexts/temporal#"
+    "xsd": "https://www.w3.org/TR/2004/REC-xmlschema-2-20041028/datatypes.html"
   },
   "@type": "Dataset",
   ...
