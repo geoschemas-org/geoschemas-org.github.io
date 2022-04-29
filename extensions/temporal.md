@@ -233,7 +233,7 @@ To specify a Geologic Time Scale, we use an OWL Time Instant. The example below 
   "@context": {
     "@vocab": "http://schema.org/",
     "time": "http://www.w3.org/2006/time",
-    "geosci-time": "http://schema.geoschemas.org/contexts/temporal#"
+    "geosci-time": "http://schema.geoschemas.org/contexts/temporal#",
     "xsd": "https://www.w3.org/TR/2004/REC-xmlschema-2-20041028/datatypes.html"
   },
   "@type": "Dataset",
