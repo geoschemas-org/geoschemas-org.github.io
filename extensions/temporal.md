@@ -111,7 +111,7 @@ __geosci-time:GeologicTimeUnitAbbreviation__ - Geologic time unit for use in OWL
 
 Type: [time:TRS](https://www.w3.org/TR/owl-time/#time:TRS)
 
-Standard time unit abbreviation for the age. BP, ka, Ma, Ga are used for before present, thousands of years, millions of years, and billions of years respecitively.
+Standard time unit abbreviation for the age. BP, BP-CAL, ka, Ma, Ga are used for before present, before present calibrated, thousands of years, millions of years, and billions of years respecitively.
 
 <a name="Uncertainty"></a>
 __geosci-time:Uncertainty__ - For defining the 'Uncertainty' in a geologic age/date for use in OWL-Time ([time:hasTRS](https://www.w3.org/TR/owl-time/#time:hasTRS)). 
