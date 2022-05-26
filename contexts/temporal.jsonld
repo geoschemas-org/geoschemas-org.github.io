@@ -23,19 +23,76 @@
       }
     },
     {
-      "@id": "geosci-time:BeforePresent",
-      "@type": ["time:TRS", "schema:Thing"],
-      "schema:name": "Before Present",
-      "schema:alternateName": "BP",
-      "schema:description": "Temporal position expressed numerically in years before January 1, 1950"
+      "@id": "geosci-time:geologicTimeUnitAbbreviation",
+      "@type": "rdf:Property",
+      "rdfs:comment": "geologicTimeUnitAbbreviation",
+      "rdfs:label": "geologicTimeUnitAbbreviation",
+      "schema:domainIncludes": { 
+        "@id": "time:TemporalEntity" 
+      },
+      "schema:rangeIncludes": { 
+        "@id": "xsd:string" 
+      }
     },
     {
-      "@id": "geosci-time:MillionsOfYears",
-      "@type": ["time:TRS", "schema:Thing"],
-      "schema:name": "Millions of Years",
-      "schema:alternateName": "Ma",
-      "schema:sameAs": "http://resource.geosciml.org/classifier/cgi/geologicage/ma",
-      "schema:description": "Temporal position expressed numerically scaled in millions of years increasing backwards relative to 1950"
+      "@id": "geosci-time:radiocarbonCalibrationCurve",
+      "@type": "rdf:Property",
+      "rdfs:comment": "radiocarbonCalibrationCurve",
+      "rdfs:label": "radiocarbonCalibrationCurve",
+      "schema:domainIncludes": { 
+        "@id": "time:Instant" 
+      },
+      "schema:rangeIncludes": { 
+        "@id": "xsd:string" 
+      }
+    },
+    {
+      "@id": "geosci-time:uncertainty",
+      "@type": "rdf:Property",
+      "rdfs:comment": "uncertainty",
+      "rdfs:label": "uncertainty",
+      "schema:domainIncludes": { 
+        "@id": "time:TemporalEntity" 
+      },
+      "schema:rangeIncludes": { 
+        "@id": "xsd:decimal" 
+      }
+    },
+    {
+      "@id": "geosci-time:uncertaintySigma",
+      "@type": "rdf:Property",
+      "rdfs:comment": "uncertaintySigma",
+      "rdfs:label": "uncertaintySigma",
+      "schema:domainIncludes": { 
+        "@id": "time:TemporalEntity" 
+      },
+      "schema:rangeIncludes": { 
+        "@id": "xsd:decimal" 
+      }
+    },
+    {
+      "@id": "geosci-time:uncertaintyOlder",
+      "@type": "rdf:Property",
+      "rdfs:comment": "uncertaintyOlder",
+      "rdfs:label": "uncertaintyOlder",
+      "schema:domainIncludes": { 
+        "@id": "time:TemporalEntity" 
+      },
+      "schema:rangeIncludes": { 
+        "@id": "xsd:decimal" 
+      }
+    },
+    {
+      "@id": "geosci-time:uncertaintyYounger",
+      "@type": "rdf:Property",
+      "rdfs:comment": "uncertaintyYounger",
+      "rdfs:label": "uncertaintyYounger",
+      "schema:domainIncludes": { 
+        "@id": "time:TemporalEntity" 
+      },
+      "schema:rangeIncludes": { 
+        "@id": "xsd:decimal" 
+      }
     }
   ]
 }
