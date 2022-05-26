@@ -25,7 +25,7 @@
     {
       "@id": "geosci-time:geologicTimeUnitAbbreviation",
       "@type": "rdf:Property",
-      "rdfs:comment": "geologicTimeUnitAbbreviation",
+      "rdfs:comment": "Geologic time unit for use in OWL-Time. Standard time unit abbreviation for the age. BP, BP-CAL, ka, Ma, Ga are used for before present, before present calibrated, thousands of years, millions of years, and billions of years respecitively.",
       "rdfs:label": "geologicTimeUnitAbbreviation",
       "schema:domainIncludes": { 
         "@id": "time:TemporalEntity" 
@@ -37,7 +37,7 @@
     {
       "@id": "geosci-time:radiocarbonCalibrationCurve",
       "@type": "rdf:Property",
-      "rdfs:comment": "radiocarbonCalibrationCurve",
+      "rdfs:comment": "For defining the 'Radiocarbon Calibration Curve' temporal reference system for use in OWL-Time.",
       "rdfs:label": "radiocarbonCalibrationCurve",
       "schema:domainIncludes": { 
         "@id": "time:Instant" 
@@ -49,7 +49,7 @@
     {
       "@id": "geosci-time:uncertainty",
       "@type": "rdf:Property",
-      "rdfs:comment": "uncertainty",
+      "rdfs:comment": "The uncertainty in the value of the geologic age in the same units as the age. Usually expressed in the literature using the symbol ± before the value. One should always pair this with uncertaintySigma when the sigma of the uncertainty is known.",
       "rdfs:label": "uncertainty",
       "schema:domainIncludes": { 
         "@id": "time:TemporalEntity" 
@@ -61,7 +61,7 @@
     {
       "@id": "geosci-time:uncertaintySigma",
       "@type": "rdf:Property",
-      "rdfs:comment": "uncertaintySigma",
+      "rdfs:comment": "The sigma of the uncertainty of the geologic age. 1 for one-sigma uncertainties, 2 for two-sigma uncertainties, etc. For easy reference, sigma values to three decimal places for uncertainties of some widely used confidence levels are: 1.645 for a 90-percent confidence level, 1.960 for a 95-percent confidence level, and 2.576 for a 99-percent confidence level. ",
       "rdfs:label": "uncertaintySigma",
       "schema:domainIncludes": { 
         "@id": "time:TemporalEntity" 
@@ -73,7 +73,7 @@
     {
       "@id": "geosci-time:uncertaintyOlder",
       "@type": "rdf:Property",
-      "rdfs:comment": "uncertaintyOlder",
+      "rdfs:comment": "If the uncertainties of an age are not symmetric around the age value, as is usually the case when Baysean methods are used, one can specify the older and younger uncertainties of the age value. One should always pair uncertaintyOlder with uncertaintyYounger. In addition, uncertaintySigma should always be used when the sigma of the uncertainty is known.",
       "rdfs:label": "uncertaintyOlder",
       "schema:domainIncludes": { 
         "@id": "time:TemporalEntity" 
@@ -85,7 +85,7 @@
     {
       "@id": "geosci-time:uncertaintyYounger",
       "@type": "rdf:Property",
-      "rdfs:comment": "uncertaintyYounger",
+      "rdfs:comment": "If the uncertainties of an age are not symmetric around the age value, as is usually the case when Baysean methods are used, one can specify the older and younger uncertainties of the age value. One should always pair uncertaintyYounger with uncertaintyOlder. In addition, uncertaintySigma should always be used when the sigma of the uncertainty is known.",
       "rdfs:label": "uncertaintyYounger",
       "schema:domainIncludes": { 
         "@id": "time:TemporalEntity" 
