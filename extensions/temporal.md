@@ -16,27 +16,14 @@ __Namespace URI__: 	[http://schema.geoschemas.org/contexts/temporal#](http://geo
 * Classes
 * [Properties](#properties)
   * [geosci-time:temporalCoverage](#temporalCoverage)
-* [Named Individuals](#namedindividuals)
-  * [geosci-time:BeforePresent](#BeforePresent)
-  * [geosci-time:BeforePresentCalibrated](#BeforePresentCalibrated)
-  * [geosci-time:RadiocarbonCalibrationCurve](#RadiocarbonCalibrationCurve)
-  * [geosci-time:ThousandsOfYears](#ThousandsOfYears)
-  * [geosci-time:MillionsOfYears](#MillionsOfYears)
-  * [geosci-time:BillionsOfYears](#BillionsOfYears)
-  * [geosci-time:GeologicTimeUnitAbbreviation](#GeologicTimeUnitAbbreviation)
-  * [geosci-time:Uncertainty](#Uncertainty)
-  * [geosci-time:UncertaintySigma](#UncertaintySigma)
-  * [geosci-time:UncertaintyOlder](#UncertaintyOlder)
-  * [geosci-time:UncertaintyYounger](#UncertaintyYounger)
+  * [geosci-time:geologicTimeUnitAbbreviation](#geologicTimeUnitAbbreviation)
+  * [geosci-time:radiocarbonCalibrationCurve](#radiocarbonCalibrationCurve)
+  * [geosci-time:uncertainty](#uncertainty)
+  * [geosci-time:uncertaintySigma](#uncertaintySigma)
+  * [geosci-time:uncertaintyOlder](#uncertaintyOlder)
+  * [geosci-time:uncertaintyYounger](#uncertaintyYounger)
 * [Using OWL Time](#owl-time)
   * [Intervals](#intervals)
-  * [Instants](#instants)
-    * [Geologic Time Scales](#geologic-time-scales)
-      * [Before Present](#before-present)
-      * [Before Present Calibrated](#before-present-calibrated)
-      * [Thousands of Years](#thousands-of-years)
-      * [Millions of Years](#millions-of-years)
-      * [Billions of Years](#billions-of-years)
   * [Durations](#durations)
   * [Seasonality](#seasonality)
   
@@ -58,90 +45,56 @@ __geosci-time:temporalCoverage__ - Use the [OWL-Time vocabulary](https://www.w3.
 Domain: [schema:Dataset](http://schema.org/Dataset)
 Range: [time:TemporalEntity](https://www.w3.org/TR/owl-time/#time:TemporalEntity)
 
-[back to top](#top)
-<hr/>
-<a name="namedindividuals"></a>
+<a name="radiocarbonCalibrationCurve"></a>
+__geosci-time:radiocarbonCalibrationCurve__ - For defining the 'Radiocarbon Calibration Curve' temporal reference system for use in OWL-Time.
 
-## Named Individuals
-
-<a name="BeforePresent"></a>
-__geosci-time:BeforePresent__ - For defining the 'Before Present' (BP) temporal reference system for use in OWL-Time ([time:hasTRS](https://www.w3.org/TR/owl-time/#time:hasTRS))
-
-Type: [time:TRS](https://www.w3.org/TR/owl-time/#time:TRS)
-
-Temporal position expressed numerically in years before January 1, 1950 AD.
-
-<a name="BeforePresentCalibrated"></a>
-__geosci-time:BeforePresentCalibrated__ - For defining the 'Before Present Calibrated' (BP-CAL) temporal reference system for use in OWL-Time ([time:hasTRS](https://www.w3.org/TR/owl-time/#time:hasTRS))
-
-Type: [time:TRS](https://www.w3.org/TR/owl-time/#time:TRS)
-
-Temporal position expressed numerically in years before January 1, 1950 AD determined by carbon dating calibrated by a specific [radiocarbon calibration curve](https://en.wikipedia.org/wiki/Radiocarbon_calibration). 
-
-<a name="RadiocarbonCalibrationCurve"></a>
-__geosci-time:RadiocarbonCalibrationCurve__ - For defining the 'Radiocarbon Calibration Curve' temporal reference system for use in OWL-Time ([time:hasTRS](https://www.w3.org/TR/owl-time/#time:hasTRS)).
-
-Type: [time:TRS](https://www.w3.org/TR/owl-time/#time:TRS)
+Domain: [time:Instant](https://www.w3.org/TR/owl-time/#time:Instant)
+Range: [xsd:string](http://www.w3.org/2001/XMLSchema#string)
 
 The [radiocarbon calibration curve](https://en.wikipedia.org/wiki/Radiocarbon_calibration) used to determine the __BeforePresentCalibrated__ date. Some examples are "INTCAL99", "INTCAL04", "INTCAL09", "INTCAL13", and "INTCAL20".
- 
-<a name="ThousandsOfYears"></a>
-__geosci-time:ThousandsOfYears__ - For defining the 'Thousands of Years' (ka) temporal reference system for use in OWL-Time ([time:hasTRS](https://www.w3.org/TR/owl-time/#time:hasTRS))
 
-Type: [time:TRS](https://www.w3.org/TR/owl-time/#time:TRS)
+<a name="geologicTimeUnitAbbreviation"></a>
+__geosci-time:geologicTimeUnitAbbreviation__ - Geologic time unit for use in OWL-Time 
 
-Temporal position expressed numerically scaled in thousands of years (ka) increasing backwards relative to 1950 AD.
-
-<a name="MillionsOfYears"></a>
-__geosci-time:MillionsOfYears__ - For defining the 'Millions of Years' (Ma) temporal reference system for use in OWL-Time ([time:hasTRS](https://www.w3.org/TR/owl-time/#time:hasTRS))
-
-Type: [time:TRS](https://www.w3.org/TR/owl-time/#time:TRS)
-
-Temporal position expressed numerically scaled in millions of years (Ma) increasing backwards relative to 1950 AD or the present.
-
-<a name="BillionsOfYears"></a>
-__geosci-time:BillionsOfYears__ - For defining the 'Billions of Years' (Ga) temporal reference system for use in OWL-Time ([time:hasTRS](https://www.w3.org/TR/owl-time/#time:hasTRS))
-
-Type: [time:TRS](https://www.w3.org/TR/owl-time/#time:TRS)
-
-Temporal position expressed numerically scaled in billions of years (Ga) increasing backwards from the present.
-
-<a name="GeologicTimeUnitAbbreviation"></a>
-__geosci-time:GeologicTimeUnitAbbreviation__ - Geologic time unit for use in OWL-Time ([time:hasTRS](https://www.w3.org/TR/owl-time/#time:hasTRS))
-
-Type: [time:TRS](https://www.w3.org/TR/owl-time/#time:TRS)
+Domain: [time:TemporalEntity](https://www.w3.org/TR/owl-time/#time:TemporalEntity)
+Range: [xsd:string](http://www.w3.org/2001/XMLSchema#string)
 
 Standard time unit abbreviation for the age. BP, BP-CAL, ka, Ma, Ga are used for before present, before present calibrated, thousands of years, millions of years, and billions of years respecitively.
 
-<a name="Uncertainty"></a>
-__geosci-time:Uncertainty__ - For defining the 'Uncertainty' in a geologic age/date for use in OWL-Time ([time:hasTRS](https://www.w3.org/TR/owl-time/#time:hasTRS)). 
+<a name="uncertainty"></a>
+__geosci-time:uncertainty__ - For defining the 'Uncertainty' in a geologic age/date for use in OWL-Time. 
 
-Type: [time:TRS](https://www.w3.org/TR/owl-time/#time:TRS)
+Domain: [time:TemporalEntity](https://www.w3.org/TR/owl-time/#time:TemporalEntity)
+Range: [xsd:decimal](http://www.w3.org/2001/XMLSchema#decimal)
 
 The uncertainty in the value of the geologic age in the same units as the age. Usually expressed in the literature using the symbol ± before the value. One should always pair this with __UncertaintySigma__ when the sigma of the uncertainty is known.
 
-<a name="UncertaintySigma"></a>
-__geosci-time:UncertaintySigma__ - For defining the 'Uncertainty Sigma' in a geologic age/date for use in OWL-Time ([time:hasTRS](https://www.w3.org/TR/owl-time/#time:hasTRS)).
+<a name="uncertaintySigma"></a>
+__geosci-time:uncertaintySigma__ - For defining the 'Uncertainty Sigma' in a geologic age/date for use in OWL-Time.
 
-Type: [time:TRS](https://www.w3.org/TR/owl-time/#time:TRS)
+Domain: [time:TemporalEntity](https://www.w3.org/TR/owl-time/#time:TemporalEntity)
+Range: [xsd:decimal](http://www.w3.org/2001/XMLSchema#decimal)
 
 The sigma of the uncertainty of the geologic age. 1 for one-sigma uncertainties, 2 for two-sigma uncertainties, etc. For easy reference, sigma values to three decimal places for uncertainties of some widely used confidence levels are: 1.645 for a 90-percent confidence level, 1.960 for a 95-percent confidence level, and 2.576 for a 99-percent confidence level. 
 
-<a name="UncertaintyOlder"></a>
-__geosci-time:UncertaintyOlder__ - For defining the 'Uncertainty Older' in a geologic age/date for use in OWL-Time ([time:hasTRS](https://www.w3.org/TR/owl-time/#time:hasTRS)).
+<a name="uncertaintyOlder"></a>
+__geosci-time:uncertaintyOlder__ - For defining the 'Uncertainty Older' in a geologic age/date for use in OWL-Time.
 
-Type: [time:TRS](https://www.w3.org/TR/owl-time/#time:TRS)
+Domain: [time:TemporalEntity](https://www.w3.org/TR/owl-time/#time:TemporalEntity)
+Range: [xsd:decimal](http://www.w3.org/2001/XMLSchema#decimal)
 
-If the uncertainties of an age are not symmetric around the age value, as is usually the case when Baysean methods are used, one can specify the older and younger uncertainties of the age value. One should always pair __UncertaintyOlder__ with __UncertaintyYounger__. In addition, __UncertaintySigma__ should always be used when the sigma of the uncertainty is known.
+If the uncertainties of an age are not symmetric around the age value, as is usually the case when Baysean methods are used, one can specify the older and younger uncertainties of the age value. One should always pair __uncertaintyOlder__ with __uncertaintyYounger__. In addition, __uncertaintySigma__ should always be used when the sigma of the uncertainty is known.
  
-<a name="UncertaintyYounger"></a>
-__geosci-time:UncertaintyYounger__ - For defining the 'Uncertainty Younger' in a geologic age/date for use in OWL-Time ([time:hasTRS](https://www.w3.org/TR/owl-time/#time:hasTRS)).
+<a name="uncertaintyYounger"></a>
+__geosci-time:uncertaintyYounger__ - For defining the 'Uncertainty Younger' in a geologic age/date for use in OWL-Time.
 
-Type: [time:TRS](https://www.w3.org/TR/owl-time/#time:TRS)
+Domain: [time:TemporalEntity](https://www.w3.org/TR/owl-time/#time:TemporalEntity)
+Range: [xsd:decimal](http://www.w3.org/2001/XMLSchema#decimal)
 
-If the uncertainties of an age are not symmetric around the age value, as is usually the case when Baysean methods are used, one can specify the older and younger uncertainties of the age value. One should always pair __UncertaintyYounger__ with __UncertaintyOlder__. In addition, __UncertaintySigma__ should always be used when the sigma of the uncertainty is known.
+If the uncertainties of an age are not symmetric around the age value, as is usually the case when Baysean methods are used, one can specify the older and younger uncertainties of the age value. One should always pair __uncertaintyYounger__ with __uncertaintyOlder__. In addition, __uncertaintySigma__ should always be used when the sigma of the uncertainty is known.
 
 [back to top](#top)
+
 <hr/>
 <a name="owl-time"></a>
 
@@ -185,71 +138,6 @@ Example: Expressing a time interval using a [time:TemporalEntity](https://www.w3
   }
 }
 ```
-[back to top](#top)
-<hr/>
-<a name="instants"></a>
-
-### Instants
-
-Instants in time are useful for describing a position in time where an event occurred. For Datasets, the temporal coverage may be an instant instead of an interval for cases where all observations were made in a single point in time.
-
-<a name="geologic-time-scales"></a>
-The Geoschemas context defines 4 geologic time scales:
-
-#### Before Present
-
-[http://schema.geoschemas.org/contexts/temporal#BeforePresent](http://schema.geoschemas.org/contexts/temporal#BeforePresent)
-
-Temporal position expressed numerically in years before January 1, 1950. Usually used only for radiocarbon dates.
-
-#### Before Present Calibrated
-
-[http://schema.geoschemas.org/contexts/temporal#BeforePresent](http://schema.geoschemas.org/contexts/temporal#BeforePresentCalibrated)
-
-Temporal position expressed numerically in years before January 1, 1950 AD determined by carbon dating calibrated by a specific [radiocarbon calibration curve](https://en.wikipedia.org/wiki/Radiocarbon_calibration).
-
-#### Thousands Of Years
-
-[http://schema.geoschemas.org/contexts/temporal#ThousandsOfYears](http://schema.geoschemas.org/contexts/temporal#ThousandsOfYears)
-
-Temporal position expressed numerically scaled in thousands of years increasing backwards relative to 1950 or the date of the age determination. Abbreviation ka."
-
-#### Millions Of Years
-
-[http://schema.geoschemas.org/contexts/temporal#MillionsOfYears](http://schema.geoschemas.org/contexts/temporal#MillionsOfYears)
-
-Temporal position expressed numerically scaled in millions of years increasing backwards relative to 1950 or the date of the age determination. Abbreviation Ma."
-
-#### Billions Of Years
-
-[http://schema.geoschemas.org/contexts/temporal#MillionsOfYears](http://schema.geoschemas.org/contexts/temporal#BillionsOfYears)
-
-Temporal position expressed numerically scaled in millions of years increasing backwards relative to 1950 or the the date of the age determination. Abbreviation Ga."
-
-To specify a Geologic Time Scale, we use an OWL Time Instant. The example below specifies 2.45 million years before present (BP):
-
-<pre>
-{
-  "@context": {
-    "@vocab": "http://schema.org/",
-    "time": "http://www.w3.org/2006/time",
-    "geosci-time": "http://schema.geoschemas.org/contexts/temporal#",
-    "xsd": "https://www.w3.org/TR/2004/REC-xmlschema-2-20041028/datatypes.html"
-  },
-  "@type": "Dataset",
-  ...
-  "geosci-time:temporalCoverage": {
-    "@type": "time:Instant",
-    "time:inTimePosition": {
-      "@type": "time:TimePosition",
-      <strong>"time:hasTRS": { "@id": "geosci-time:BeforePresent" },
-      "time:numericPosition": { "@value": 2450000.0, "@type": "xsd:decimal" }
-      "geosci-time:GeologicTimeUnitAbbreviation": { "@value": "BP, "@type": "xsd:string" }</strong>
-    }
-  }
-}
-</pre>
-
 [back to top](#top)
 <hr/>
 <a name="durations"></a>
